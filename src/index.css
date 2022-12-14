@@ -55,3 +55,15 @@ html, body, #root{
   color:#111;
   cursor: pointer;
 }
+
+/* button:hover{ */
+  /* translate: scale(1.2); */
+/* } */
+/*  */
+/* button:active{ */
+  /* translate: scale(0.97); */
+/* } */
+
+.header button:disabled{
+  opacity: 0.5;
+}

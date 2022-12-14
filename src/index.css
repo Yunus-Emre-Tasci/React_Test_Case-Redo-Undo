@@ -54,15 +54,12 @@ html, body, #root{
   background-color: #fff;
   color:#111;
   cursor: pointer;
+  box-shadow: 4px 4px 10px black;
 }
 
-/* button:hover{ */
-  /* translate: scale(1.2); */
-/* } */
-/*  */
-/* button:active{ */
-  /* translate: scale(0.97); */
-/* } */
+button:active{
+  transform: scale(0.97);
+}
 
 .header button:disabled{
   opacity: 0.5;

@@ -1,11 +1,19 @@
 
 
-import Home from "./pages/Home";
-
 const App=()=>{
+  const [points, setPoints] = useState([])
+
+  const clickHandle=(e)=>{
+    // console.log(e.clientX,e.clientY);
+    setPoints(points=>[...points,{
+      x:e.clientX,
+      y:e.clientY
+    }])
+  }
+
   return(
-    <div>
-      <Home/>
+    <div className="screen" onClick={clickHandle}>
+      test
     </div>
   )
 }

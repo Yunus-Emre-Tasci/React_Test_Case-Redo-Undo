@@ -14,7 +14,20 @@ const App=()=>{
 
   return(
     <div className="screen" onClick={clickHandle}>
-      test
+      <header className="header">
+        <button>Redo</button>
+        <button>Undo</button>
+      </header>
+      {points.map((point)=>(
+        < div className = "point"
+        style = {
+          {
+            left: point.x,
+            top: point.y
+          }
+        }
+        />
+      ))}
     </div>
   )
 }

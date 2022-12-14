@@ -18,15 +18,18 @@ const App=()=>{
     e.stopPropagation()
     const balls =[...points]
     const item = balls.pop()
-    setData(data=>[...data,item])
+    console.log(balls)
     setPoints(balls)
+    setData(data=>[...data,item])
   }
 
   const undoHandle=(e)=>{
     e.stopPropagation()
     const d=[...data]
     const item=d.pop()
+    console.log(item);
     setPoints(points=>[...points,item])
+    console.log(data)
     setData(d)
   }
 
